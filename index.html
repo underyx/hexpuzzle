@@ -65,7 +65,7 @@
 				<section>
           <section>
             <h2>Hi, I'm @underyx</h2>
-            <p class="fragment">&hellip;and I got a puzzle with lots of numbers as a present.</p>
+            <p class="fragment" id="fragment-1">&hellip;and I got a puzzle with lots of numbers as a present.</p>
           </section>
 				</section>
 
@@ -85,8 +85,8 @@
 					<section data-state="white"><img src="/img/bmispelon-dm.png"></section>
 					<section>
 						<p>11,810,203,923,187 seconds</p>
-						<p class="fragment">374,499 years</p>
-						<p class="fragment">16.4 billion HUF for electricity</p>
+						<p class="fragment" id="fragment-8">374,499 years</p>
+						<p class="fragment" id="fragment-9">16.4 billion HUF for electricity</p>
 					</section>
 				</section>
 
@@ -101,7 +101,7 @@
 					<section>
 						<div id="grid-2" class="fragment"></div>
 						<div id="grid-2-inline" class="fragment"></div>
-						<div class="fragment">
+						<div class="fragment" id="fragment-12">
 							<pre><code data-trim>
 sample_arrangement = [8, 17, 13, 9, 10, 7, 16, 4, 11, 18, 15, 1, 12, 14, 2, 5, 6, 3, 19]
 							</code></pre>
@@ -163,7 +163,7 @@ def score_arrangement(arrangement):
 
     return tally
 						</code></pre>
-						<div class="fragment">
+						<div class="fragment" id="fragment-13">
 							<pre><code data-trim>
 >>> score_arrangement([8, 17, 13, 9, 10, 7, 16, 4, 11, 18, 15, 1, 12, 14, 2, 5, 6, 3, 19])
 144
@@ -216,16 +216,16 @@ print('Solution is {0}'.format(TILES))
     return result
 </code></pre>
 
-<pre class="fragment" data-trim>
+<pre class="fragment" id="fragment-21" data-trim>
 <code>def get_mutations(arrangement, count=100):
     return (mutate_arrangement(arrangement) for _ in range(count))
 </code></pre>
 
-<pre class="fragment" data-trim>
+<pre class="fragment" id="fragment-22" data-trim>
 <code>MutationResult = collections.namedtuple('MutationResult', ['arrangement', 'score'])
 </code></pre>
 
-<pre class="fragment" data-trim>
+<pre class="fragment" id="fragment-23" data-trim>
 <code>while score != 0:
     mutations = (
         MutationResult(arrangement, score_arrangement(arrangement))
@@ -245,7 +245,7 @@ print('Solution is {0}'.format(TILES))
 					</section>
 					<section>
 						<h3>Our boards can get worse!</h3>
-						<pre class="fragment" data-trim>
+						<pre class="fragment" id="fragment-24" data-trim>
 						<code>mutations = itertools.chain(
     (base_arrangement,), get_mutations(base_arrangement)
 )
@@ -253,7 +253,7 @@ print('Solution is {0}'.format(TILES))
 					</section>
 					<section>
 						<h3>Our boards can get stuck!</h3>
-						<div class="fragment">
+						<div class="fragment" id="fragment-25">
 							<pre data-trim><code>history = collections.Counter()</code></pre>
 							<pre data-trim>
 							<code>best_mutation = mutation_results.pop()

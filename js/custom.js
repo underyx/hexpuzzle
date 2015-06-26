@@ -254,7 +254,12 @@ var gridset = React.render(
   document.getElementById('gridset')
 );
 
+Reveal.addEventListener( 'slidechanged', function( event ) {
+  ga('send', 'event', 'slide', 'show', event.indexh + '-' + event.indexv);
+} );
+
 Reveal.addEventListener( 'fragmentshown', function( event ) {
+  ga('send', 'event', 'fragment', 'show', event.fragment.id);
   switch (event.fragment.id) {
     case 'grid-1-fill':
       return grid1.randomFill();

@@ -1,0 +1,123 @@
+.gridset .grid {
+  display: inline-block; }
+
+.visible.fragment .grid {
+  margin-top: 90px; }
+  .visible.fragment .grid .row {
+    margin-bottom: 25px; }
+    .visible.fragment .grid .row.inline {
+      display: inline-block; }
+      .visible.fragment .grid .row.inline .tile .hexagon {
+        font-size: 50px; }
+      .visible.fragment .grid .row.inline .tile .number {
+        font-size: 28px;
+        left: 6px;
+        top: 6px;
+        width: 33px; }
+    .visible.fragment .grid .row .tile {
+      position: relative;
+      display: inline-block; }
+      .visible.fragment .grid .row .tile .hexagon, .visible.fragment .grid .row .tile .number {
+        opacity: 0.7;
+        animation-name: fade-in;
+        animation-fill-mode: backwards;
+        animation-duration: 0.5s;
+        animation-timing-function: cubic-bezier(0.82, 0.7, 0.6, 1.56);
+        transition: opacity 0.2s; }
+        .visible.fragment .grid .row .tile .hexagon.flashed, .visible.fragment .grid .row .tile .number.flashed {
+          opacity: 1; }
+      .visible.fragment .grid .row .tile .hexagon {
+        position: relative;
+        display: inline-block;
+        font-size: 100px;
+        line-height: 0;
+        color: transparent;
+        -webkit-text-stroke: 3px white; }
+      .visible.fragment .grid .row .tile .number {
+        display: inline-block;
+        left: 20px;
+        top: -12px;
+        height: 100px;
+        width: 50px;
+        text-align: center;
+        vertical-align: middle;
+        position: absolute; }
+      .visible.fragment .grid .row .tile.tile-1 > .hexagon, .visible.fragment .grid .row .tile.tile-1 > .number {
+        animation-delay: 0.084s; }
+      .visible.fragment .grid .row .tile.tile-2 > .hexagon, .visible.fragment .grid .row .tile.tile-2 > .number {
+        animation-delay: 0.1008s; }
+      .visible.fragment .grid .row .tile.tile-3 > .hexagon, .visible.fragment .grid .row .tile.tile-3 > .number {
+        animation-delay: 0.12096s; }
+      .visible.fragment .grid .row .tile.tile-4 > .hexagon, .visible.fragment .grid .row .tile.tile-4 > .number {
+        animation-delay: 0.14515s; }
+      .visible.fragment .grid .row .tile.tile-5 > .hexagon, .visible.fragment .grid .row .tile.tile-5 > .number {
+        animation-delay: 0.17418s; }
+      .visible.fragment .grid .row .tile.tile-6 > .hexagon, .visible.fragment .grid .row .tile.tile-6 > .number {
+        animation-delay: 0.20902s; }
+      .visible.fragment .grid .row .tile.tile-7 > .hexagon, .visible.fragment .grid .row .tile.tile-7 > .number {
+        animation-delay: 0.25082s; }
+      .visible.fragment .grid .row .tile.tile-8 > .hexagon, .visible.fragment .grid .row .tile.tile-8 > .number {
+        animation-delay: 0.30099s; }
+      .visible.fragment .grid .row .tile.tile-9 > .hexagon, .visible.fragment .grid .row .tile.tile-9 > .number {
+        animation-delay: 0.36118s; }
+      .visible.fragment .grid .row .tile.tile-10 > .hexagon, .visible.fragment .grid .row .tile.tile-10 > .number {
+        animation-delay: 0.43342s; }
+      .visible.fragment .grid .row .tile.tile-11 > .hexagon, .visible.fragment .grid .row .tile.tile-11 > .number {
+        animation-delay: 0.52011s; }
+      .visible.fragment .grid .row .tile.tile-12 > .hexagon, .visible.fragment .grid .row .tile.tile-12 > .number {
+        animation-delay: 0.62413s; }
+      .visible.fragment .grid .row .tile.tile-13 > .hexagon, .visible.fragment .grid .row .tile.tile-13 > .number {
+        animation-delay: 0.74895s; }
+      .visible.fragment .grid .row .tile.tile-14 > .hexagon, .visible.fragment .grid .row .tile.tile-14 > .number {
+        animation-delay: 0.89874s; }
+      .visible.fragment .grid .row .tile.tile-15 > .hexagon, .visible.fragment .grid .row .tile.tile-15 > .number {
+        animation-delay: 1.07849s; }
+      .visible.fragment .grid .row .tile.tile-16 > .hexagon, .visible.fragment .grid .row .tile.tile-16 > .number {
+        animation-delay: 1.29419s; }
+      .visible.fragment .grid .row .tile.tile-17 > .hexagon, .visible.fragment .grid .row .tile.tile-17 > .number {
+        animation-delay: 1.55303s; }
+      .visible.fragment .grid .row .tile.tile-18 > .hexagon, .visible.fragment .grid .row .tile.tile-18 > .number {
+        animation-delay: 1.86363s; }
+      .visible.fragment .grid .row .tile.tile-19 > .hexagon, .visible.fragment .grid .row .tile.tile-19 > .number {
+        animation-delay: 2.23636s; }
+    .visible.fragment .grid .row .counter {
+      color: #AAA;
+      display: inline-block;
+      position: relative;
+      width: 0;
+      font-weight: 800;
+      bottom: 12px;
+      left: 10px;
+      opacity: 0; }
+      .visible.fragment .grid .row .counter.visible {
+        opacity: 1;
+        transition: opacity 0.5s; }
+        .visible.fragment .grid .row .counter.visible.correct {
+          color: #00ff00; }
+.visible.fragment .score {
+  font-size: 2em; }
+
+body {
+  transition: background 0.5s, -webkit-transform 0.8s ease !important; }
+  body h2 {
+    transition: color 0.5s !important; }
+
+.white body {
+  background: white; }
+  .white body h2 {
+    color: black; }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 0.7; } }
+#countdown > p {
+  font-size: 8em; }
+
+#equation {
+  background: none;
+  border: none;
+  box-shadow: none; }
+
+/*# sourceMappingURL=custom.css.map */

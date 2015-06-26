@@ -1,11 +1,11 @@
-# Solving a Math Puzzle When You're Bad at Math
+# Solving a Math Puzzle When You're Bad at Math
+
+This is all the source code I had for my talk with the above title at the
+[June 2015 budapest.py meetup](http://www.meetup.com/budapest-py/events/222822762/).
 
 To see the presentation yourself, please visit
 [hexpuzzle.underyx.me](https://hexpuzzle.underyx.me). Advance the slides with
 the spacebar. Also, don't go backwards, that will break everything :D
-
-This is all the source code I had for my talk with the above title at the
-[June 2015 budapest.py meetup](http://www.meetup.com/budapest-py/events/222822762/).
 
 I did not bother cleaning up, and the entire thing is just horribly written —
 it was my first time using genetic algorithms, reveal.js, React, Sass, lodash,

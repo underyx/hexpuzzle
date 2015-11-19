@@ -27,6 +27,7 @@
         .tile {
           .hexagon {
             font-size: 50px;
+            font-family: 'hexagon-only', sans-serif;
           }
 
           .number {
@@ -60,6 +61,7 @@
           position: relative;
           display: inline-block;
           font-size: 100px;
+          font-family: 'hexagon-only', sans-serif;
           line-height: 0;
           color: transparent;
           -webkit-text-stroke: 3px white;
